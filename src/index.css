@@ -5,9 +5,476 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+nav{
+  width: 100%;
+  background-color:rgb(229, 226, 134);
+  height: 100px;
+  position: relative;
+
+  
+}
+.headerimage{
+  width: 80px;
+  height: 80px;
+  position: relative;
+  right: 500px;
+  top:10px;
+}
+.nav1 a{
+  
+  text-decoration: none;
+  margin-right: 15px;
+  align-items: center;
+  position: relative;
+  bottom: 25px;
+  left:30%;
+  color: rgb(23, 37, 241);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav a.active{
+  
+  font-size: 30px;
+}
+.nav2 {
+  background-color: white;
+  color: black;
+}
+.nav2 a{
+  text-decoration: none;
+  margin-right: 15px;
+
+}
+
+
+/* Udays */
+@keyframes slide1 {
+  from{
+    transform: translateX(0px);
+  }to{
+    transform: translateX(30px);
+  }
+  
+}
+@keyframes slide2 {
+  from{
+    transform: translateX(0px);
+  }to{
+    transform: translateX(-30px);
+  }
+  
+}
+
+.mainContainer{
+  height: auto;
+  width:100%;
+  background-color: rgb(50, 47, 47) ;
+}
+.frame1Container{
+  height: 800px;
+  width:100%;
+  
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: rgb(50, 47, 47);
+}
+.leftFrame1{
+  margin-top: 100px;
+  margin-left: 40px;
+
+  width:40%;
+  height: 600px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 10px 10px 10px black;
+  border-radius: 30px;
+  background-color: rgb(62, 36, 50);
+  
+}
+.leftFrame1 .leftFrame11{
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  row-gap: 50px;
+  
+  
+}
+.leftFrame1 .leftFrame11 .leftFrame12{
+  display: flex;
+  flex-direction: row;
+  column-gap: 150px;
+  justify-content: center;
+  
+}
+.loginbox{
+  border: 1px solid black;
+  /* padding:15px; */
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 3px 3px 3px black;
+  
+}
+.loginbox:hover{
+  background-color: rgb(236, 231, 84);
+  color: black;
+}
+.registerbox:hover{
+  background-color: rgb(236, 231, 84);
+  color: black;
+}
+.registerbox{
+  border: 1px solid black;
+  padding:15px;
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 3px 3px 3px black;
+ 
+}
+.leftFrame12 a{
+  text-decoration: none;
+  color:white;
+}
+.leftFrame1:hover{
+  animation: slide1 2s;
+}
+.rightFrame1{
+  margin-top: 70px;
+  margin-left: 60px;
+  width:50%;
+  height: 700px;
+  display:flex;
+  flex-direction: column;
+  row-gap: 30px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px black;
+  right:20px;
+
+}
+.containerLogin{
+  background-image: url("loginback.jpg");
+  height: 700px;
+}
+.log1{
+  width: 35%;
+  height: 500px;
+  position:absolute;
+  margin-top:100px;
+  margin-left: 500px;
+  justify-content: center; 
+  box-shadow: 1px 1px 5px rgb(155, 155, 192);
+  border-radius: 2px;
+  align-items: center;
+  opacity: 0.9;
+  color: rgba(236, 229, 233, 0.904);
+ background: linear-gradient(rgb(120, 112, 112),rgb(87, 94, 110),rgb(74, 84, 74))
+}
+/* .containerLogin{
+    
+} */
+
+.LoginCenter{
+  display: flex;
+  flex-direction: row;
+  row-gap: 30px;
+  justify-content: center;
+  text-align: center;
+}
+.login{
+  width:40%;
+  height: 30px;
+  /* border: 3px solid rgb(139, 70, 203); */
+  margin-top: 550px;
+  position: relative;
+  right: 250px;
+  
+  display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+font-size: 30px;
+
+}
+.login a{
+  text-decoration: none;
+
+}
+.Register{
+  width:40%;
+  height: 30px;
+  /* border: 3px solid rgb(101, 100, 94); */
+  margin-top: 550px;
+  margin-left: 10px;
+  
+  display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+font-size: 30px;
+position:relative;
+right: 100px;
+color:black;
+}
+
+/* body{
+  background-color: rgb(24, 84, 138);
+} */
+.html1{
+  height: 160px;
+  width:50%;
+  border: 1px solid rgb(36,33,27);
+  margin-left: 100px;
+  position: relative;
+  top:-40px;
+  padding-top: 10px;
+  background-image: url('htmltext.png');
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px black;
+  /* margin: 30px; */
+  
+}
+.html1:hover{
+  background-color: cadetblue;
+ 
+  animation:slide1 4s;
+}
+
+.signupbutton{
+  text-decoration: none;
+  color: black;
+}
+
+.css1{
+  height: 160px;
+  width:50%;
+  border: 1px solid rgb(36,33,27);
+  position: relative;
+  margin-left: 200px;
+  top:-40px;
+  background-image: url('cssimage1.png');
+
+  background-color: black;
+  font-size: 20px;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px black;
+  justify-self: start;
+  z-index: 1;
+}
+.css1:hover{
+  background-color: cadetblue;
+  
+  transform: scale(1.2);
+}
+.javascript1{
+  height: 170px;
+  width:50%;
+  border: 1px solid rgb(36, 33, 27);
+  position: relative;
+  top:-40px;
+  margin-left: 200px;
+  background-image: url('javascriptimage.png');
+  background-repeat: repeat-y;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px black;
+}
+.javascript1:hover{
+  /* background-color: rgb(172, 203, 205); */
+  
+  animation:slide2 4s;
+}
+h1{
+  position:relative;
+  bottom: 20px;
+  left: 10px;
+  
+  
+}
+.csscontent{
+  position: relative;
+  bottom: 100px;
+  left: -50px;
+}
+.quote{
+  position: relative;
+  left: 30%;
+  top:50px;
+}
+/* img{
+  position: relative;
+  left: 50px;
+  top:50px;
+} */
+
+/* frame2 */
+body {
+  margin: auto;
+}
+
+/* 2nd frame */
+
+
+.im1:hover{
+  transform: scale(1.1);
+  
+}
+
+
+.im2:hover{
+  transform: scale(1.1);
+}
+.img3:hover{
+  transform: scale(1.1);
+}
+.main3{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(50, 47, 47);
+  width: auto;
+  color: alicebluew;
+  animation-name: uday;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.2,0.2,0.2,0.2);
+  margin: 100px;
+  overflow: hidden;
+}
+.main1{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(50, 47, 47);
+  width: 100%;
+  color: alicebluew;
+  animation-name: uday1;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.2,0.2,0.2,0.2);
+  margin: 100px;
+  width: auto;
+}
+.main2{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(50, 47, 47);
+  width: 100%;
+  color: alicebluew;
+  animation-name: uday;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.2,0.2,0.2,0.2);
+  margin: 100px;
+  width: auto;
+}
+
+/* .flex-b1{
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  margin-top: 200px;
+}
+.flex-b2{
+  display:flex;
+  flex-direction: row;
+  margin-top: 200px;
+} */
+.im1 ,.im2{
+  height: 400px;
+  width: 400px;
+
+}
+.img3{
+  height: 400px;
+  width:400px;
+}
+.content{
+  position: relative;
+  left:80px;
+  top:110px;
+  font-size: 20px;
+  display: inline-block;
+  overflow: hidden;
+  width: 100vh;
+  color: cornsilk;
+  justify-content: start;
+  display: block;
+  text-align: start;
+}
+.red{
+  color: rgb(209, 197, 61);
+  text-align: start;
+  display: block;
+  justify-content: first;
+}
+.back{
+  color: rgb(71, 129, 223);
+}
+.login{
+  background-color: rgb(212, 202, 199);
+  border:1px solid black;
+  
+  width:auto;
+  height: 50px;
+}
+.footer1{
+  background-color: rgb(229, 226, 134);
+  display: flex;
+  flex-direction: row;
+  column-gap: 150px;
+  row-gap: 150px;
+  justify-content: space-around;
+  height: auto;
+  
+  
+}
+h3 a{
+  color: black;
+}
+
+h3 a:hover{
+  color:blue;
+}
+.footer1 .footer2{
+  text-decoration: none;
+  
+}
+.alignment{
+ padding-top: 50px;
+ padding-bottom: 50px;
+}
+
+/* @keyframes uday {
+  from{
+      transform: translateX(1200px);
+  }
+  to{
+      transform: translate(0px);
+  }
+}
+@keyframes uday1 {
+  from{
+      transform: translateX(-1200px);
+  }
+  to{
+      transform: translate(0px);
+  }
+}@keyframes uday2 {
+  from{
+      transform: translateX(1200px);
+  }
+  to{
+      transform: translate(0px);
+  }
+} */
+
+
